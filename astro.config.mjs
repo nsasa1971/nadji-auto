@@ -4,7 +4,9 @@ import react from '@astrojs/react';
 
 export default defineConfig({
   output: 'server',
-  adapter: cloudflare(),
+  adapter: cloudflare({ imageService: 'passthrough' }),
+  // Prijava ide preko Supabase kolačića, Astro sesije (KV) ne trebaju.
+  session: false,
   integrations: [react()],
   env: {
     schema: {
