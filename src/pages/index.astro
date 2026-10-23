@@ -1,0 +1,18 @@
+---
+import Base from '../layouts/Base.astro';
+import TopBar from '../components/TopBar.astro';
+import Header from '../components/Header.astro';
+import Hero from '../components/Hero.astro';
+import Footer from '../components/Footer.astro';
+import { marke } from '../lib/baza';
+---
+<Base>
+  <TopBar />
+  <Header />
+  <!-- Kad stigne prava fotografija: <Hero slika="/hero/hero.jpg" alt="..." /> -->
+  <Hero />
+  <main class="kontejner" style="padding-block: var(--razmak-7)">
+    <p>Skelet faze 0. U bazi je {marke().length} marki.</p>
+  </main>
+  <Footer />
+</Base>
