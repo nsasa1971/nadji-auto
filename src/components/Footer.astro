@@ -1,0 +1,13 @@
+---
+const godina = new Date().getFullYear();
+---
+<footer class="podnozje">
+  <div class="kontejner">
+    <p>© {godina} Nađi auto. Povezano sa aplikacijom <a href="https://autolovac.rs">AutoLovac</a>.</p>
+  </div>
+</footer>
+<style>
+  .podnozje { background: var(--tamna); color: var(--tekst-sek-na-tamnom); padding: var(--razmak-6) 0; }
+  p { margin: 0; }
+  a:hover { color: var(--akcent); }
+</style>

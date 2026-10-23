@@ -1,0 +1,22 @@
+---
+---
+<header class="zaglavlje">
+  <div class="kontejner red">
+    <a class="logo" href="/">Nađi <span>auto</span></a>
+    <nav aria-label="Glavna navigacija" class="nav">
+      <a href="/oglasi">Oglasi</a>
+      <a href="/prijava">Prijava</a>
+      <a class="dugme" href="/oglas/novi">Postavi oglas</a>
+    </nav>
+  </div>
+</header>
+<style>
+  .zaglavlje { background: var(--tamna); color: var(--tekst-na-tamnom); position: relative; z-index: 2; }
+  .red { display: flex; align-items: center; justify-content: space-between; min-height: 64px; gap: var(--razmak-4); }
+  .logo { font-weight: 800; font-size: 1.5rem; text-decoration: none; }
+  .logo span { color: var(--akcent); }
+  .nav { display: flex; align-items: center; gap: var(--razmak-5); }
+  .nav a:not(.dugme) { text-decoration: none; font-weight: 600; }
+  .nav a:not(.dugme):hover { color: var(--akcent); }
+  @media (max-width: 599px) { .nav a:not(.dugme) { display: none; } }
+</style>
